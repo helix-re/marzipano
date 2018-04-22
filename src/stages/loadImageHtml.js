@@ -35,7 +35,7 @@ function loadImageHtml(url, rect, done) {
   // Allow cross-domain image loading.
   // This is required to be able to create WebGL textures from images residing
   // on a different domain than the HTML document's.
-  img.crossOrigin = 'anonymous';
+  img.crossOrigin = 'use-credentials';
 
   var x = rect && rect.x || 0;
   var y = rect && rect.y || 0;
