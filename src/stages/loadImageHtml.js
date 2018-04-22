@@ -42,7 +42,7 @@ function loadImageHtml(url, rect, done) {
   // an Access-Control-Allow-Origin header with a wildcard. See the section
   // "Credentialed requests and wildcards" on:
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-  img.crossOrigin = 'anonymous';
+  img.crossOrigin = 'use-credentials';
 
   var x = rect && rect.x || 0;
   var y = rect && rect.y || 0;
